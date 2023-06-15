@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Login</title>
+</head>
+<body>
+  <form class="formContainer">
+    <div class="mainCard">
+      <div id="loginCard">
+        <div class="userPhoto"><p>Inicia sesión</p></div>
+        <!---->
+        <label for="email_input">Email</label>
+        <input type="email" name="email" id="email_input" required/>
+        <!---->
+        <label for="password_input">Contraseña</label>
+        <input type="password" name="password" id="password_input" required/>
+        <a href="">¿Olvidate la contraseña?</a>
+        <!---->
+        <button type="button" id="button_input">Iniciar</button>
+        <button type="button" id="button_input_registrarse" onclick="flip()">Crear cuenta</button>
+        <!---->
+        <div class="redes">
+          <a href="https://github.com/LucasValenti?tab=repositories" target="_blank">
+            <img id="github" src="img/github-142-svgrepo-com (1).svg" alt="github logo">
+          </a>
+          <a href="https://instagram.com/kusak.rar?igshid=ZDc4ODBmNjlmNQ==" target="_blank">
+            <img id="instagram" src="img/instagram-2-1-logo-svgrepo-com.svg" alt="instagram logo">
+          </a>
+          <a href="https://www.facebook.com/lucas.valenti08/" target="_blank">
+            <img id="facebook" src="img/facebook-color-svgrepo-com.svg" alt="facebook logo">
+          </a>
+        </div>
+      </div>
+      <!---->
+      <div id="registerCard">
+        <!---->
+        <p class="titulo_registro">Crear Cuenta</p>
+        <!---->
+        <label for="email_registro">Email</label>
+        <input type="email" name="email" id="email_registro" required/>
+        <!---->
+        <label for="password_contraseña">Contraseña</label>
+        <input type="password" name="password" id="password_registro" required/>
+        <!---->
+        <label for="password_confirmarContraseña">Confirmar Contraseña</label>
+        <input type="password" name="password" id="password_confirmarContraseña" required/>
+        <!---->
+          <button type="button" id="button_registro">Registrarse</button>
+            <p class="titulo_acceder">¿Ya tienes una cuenta?</p>
+          <button type="button" id="button_registro_acceder" onclick="flip()">Acceder</button>
+      </div>
+    </div>
+  </form>
+  <!---->
+  <script src="main.js"></script>
+</body>
+</html>
