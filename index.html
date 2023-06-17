@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8b54e6eece.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
     <title>Login</title>
 </head>
 <body>
   <form class="formContainer">
     <div class="mainCard">
+      <!--CONTENIDO DE LA CARTA DE INICIO DE SESION-->
       <div id="loginCard">
         <div class="userPhoto"><p>Inicia sesión</p></div>
-        <!---->
-        <label for="email_input">Email</label>
-        <input type="email" name="email" id="email_input" required/>
-        <!---->
-        <label for="password_input">Contraseña</label>
-        <input type="password" name="password" id="password_input" required/>
-        <a href="">¿Olvidate la contraseña?</a>
-        <!---->
-        <button type="button" id="button_input">Iniciar</button>
-        <button type="button" id="button_input_registrarse" onclick="flip()">Crear cuenta</button>
-        <!---->
+          <label for="email_input">Email</label>
+          <input type="email" name="email" id="email_input" required/>
+
+        <div class="wrapEye">
+          <label for="password_input">Contraseña</label>
+          <input type="password" name="password" id="password_input" required/>
+          <span id="eyeIcon">
+            <i class="fa-solid fa-eye"></i>
+          </span>
+        </div>
+
+          <a href="">¿Olvidate la contraseña?</a>
+
+          <button type="button" id="button_input">Iniciar</button>
+          <button type="button" id="button_input_registrarse" onclick="flip()">Crear cuenta</button>
+
+        <!--LINK REDES-->
         <div class="redes">
           <a href="https://github.com/LucasValenti?tab=repositories" target="_blank">
             <img id="github" src="img/github-142-svgrepo-com (1).svg" alt="github logo">
@@ -35,27 +43,40 @@
           </a>
         </div>
       </div>
-      <!---->
+    </div>
+  </form>
+
+      <!--CONTENIDO DE LA CARTA DE CREAR CUENTA-->
+  <form class="formContainer">
+    <div class="mainCardRegistro">
       <div id="registerCard">
-        <!---->
-        <p class="titulo_registro">Crear Cuenta</p>
-        <!---->
+        <h1 class="titulo_registro">Crear Cuenta</h1>
+
         <label for="email_registro">Email</label>
         <input type="email" name="email" id="email_registro" required/>
-        <!---->
-        <label for="password_contraseña">Contraseña</label>
-        <input type="password" name="password" id="password_registro" required/>
-        <!---->
-        <label for="password_confirmarContraseña">Confirmar Contraseña</label>
-        <input type="password" name="password" id="password_confirmarContraseña" required/>
-        <!---->
-          <button type="button" id="button_registro">Registrarse</button>
-            <p class="titulo_acceder">¿Ya tienes una cuenta?</p>
-          <button type="button" id="button_registro_acceder" onclick="flip()">Acceder</button>
+
+        <div class="wrapEyeRegistro">
+          <label for="password_contraseña">Contraseña</label>
+          <input type="password" name="password" id="password_registro" required/>
+          <span id="eyeIconRegistro">
+            <i class="fa-solid fa-eye"></i>
+          </span>
+        </div>
+
+        <div class="wrapEyeConRegistro">
+          <label for="password_confirmarContraseña">Confirmar Contraseña</label>
+          <input type="password" name="password" id="password_confirmarContraseña" required/>
+          <span id="eyeIconConRegistro">
+            <i class="fa-solid fa-eye"></i>
+          </span>
+        </div>
+
+        <button type="button" id="button_registro">Registrarse</button>
+          <p class="titulo_acceder">¿Ya tienes una cuenta?</p>
+        <button type="button" id="button_registro_acceder" onclick="flip()">Acceder</button>
       </div>
     </div>
   </form>
-  <!---->
   <script src="main.js"></script>
 </body>
 </html>
